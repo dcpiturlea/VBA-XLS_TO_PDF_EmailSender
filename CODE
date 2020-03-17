@@ -109,5 +109,11 @@ Function Email_Sender_Outlook(FileNamePDF As String, StrTo As String, _
     Set OutMail = Nothing
     Set OutApp = Nothing
 End Function
+___________________________________________________________________________
 
+Sub Automatically_report()
+
+    Application.OnTime TimeValue("13:12:00"), "RDB_Worksheet_Or_Worksheets_To_PDF_And_Create_Mail"
+
+End Sub
 
